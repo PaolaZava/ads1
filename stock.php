@@ -10,9 +10,9 @@ Listado de productos
 <tr>
 <td>CODIGO</td>
 <td>PRODUCTO</td>
-<td>DESCRIPCION</td>
+
 <td>PRECIO</td>
-<td>STOCK</td>
+<td>CANTIDAD</td>
 
 </tr>
 <?php
@@ -28,9 +28,9 @@ for($i=0;$i<$n;$i++)
 	echo "<tr>";
 	echo "<td>" .mysql_result($resultado,$i,'CODIGO')."</td>";
 	echo "<td>" .mysql_result($resultado,$i,'PRODUCTO')."</td>";
-	echo "<td>" .mysql_result($resultado,$i,'DESCRIPCION')."</td>";
+	
 	echo "<td>" .mysql_result($resultado,$i,'PRECIO')."</td>";
-	echo "<td>" .mysql_result($resultado,$i,'STOCK')."</td>";
+	echo "<td>" .mysql_result($resultado,$i,'CANTIDAD')."</td>";
 	
 	echo "</tr>";
 }
@@ -41,4 +41,4 @@ mysql_close($dp);
 </table>
 </center>
 </body>
-</html>
+	 </html>
