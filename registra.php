@@ -8,7 +8,7 @@
 <tr>
 <td>CODIGO</td>
 <td>PRODUCTO</td>
-<td>DESCRIPCION</td>
+
 <td>PRECIO</td>
 <td>STOCK</td>
 </tr>
@@ -39,7 +39,7 @@ for($i=0;$i<$n;$i++)
 	echo "<tr>";
 	echo "<td>".mysql_result($resultado,$i,'codigo')."</td>";
 	echo "<td>".mysql_result($resultado,$i,'producto')."</td>";
-	echo "<td>".mysql_result($resultado,$i,'descripcion')."</td>";
+	
 	echo "<td>".mysql_result($resultado,$i,'precio')."</td>";
 	echo "<td>".mysql_result($resultado,$i,'stock')."</td>";
 	
